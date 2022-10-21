@@ -1,0 +1,481 @@
+*{  margin:0px;
+    padding: 0px;}
+
+
+/*opsætning af header*/
+
+header{
+   
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    position: fixed;
+    background-color: #f3f5f7;
+    top: 0px;
+    
+
+}
+
+
+/* Når jeg putter "a" efter "header nav" taler jeg til de links der er i denne section*/
+
+header nav a{
+   
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background-color: #f3f5f7;
+    
+   
+    
+    
+}
+
+header nav{
+    background-color: #f3f5f7;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-right: 200px;
+    color: #29293c;
+    padding-bottom: 50px;
+
+
+    
+}
+
+
+
+/*billedafsnit med skrift - forside*/
+
+main {
+
+    margin-top: 100px;
+    min-width: 110px; /*denne går at alle billedboxse ikke fletter sammen,
+    når man trækker skærmen sammen, men forbliver med mellemrum*/
+
+}
+
+
+
+
+/* Første section - med billed med skrift ovenpå*/
+
+#firstesection{
+    background-color: #f3f5f7;
+    background-image: url(images/SNEGL.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    
+
+
+    font-size: 45px;
+    color: #f3f5f7;
+    text-align: left;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: initial;
+    padding-left: 100px;
+}
+
+/* Når jeg putter "a" efter "firstsection" taler jeg til de links der er i denne section*/
+
+#firstesection a{
+    color: #29293c;
+}
+
+    
+
+/* Anden section med de tre opskrifter - her anvendes der flexbox*/
+
+/* #secondsection er den overordnede section som indeholder flexboxen*/
+
+#secondsection{
+    background-color: #29293c;
+    text-align: center;
+    color: #f3f5f7;
+    font-family:serif;
+    font-size: xx-large;
+   
+}
+
+
+/*Her starter flexbox indholdet*/
+.cardcontainer1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #29293c;
+    padding-bottom: 70px;
+}
+
+
+
+.cardcontainer1 div {
+    width: 300px;
+    text-align: center;
+}
+
+
+
+.cardcontainer1 h1 { 
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-top: 5px;
+}
+
+
+.cardcontainer1 p {
+    text-align: center;
+    letter-spacing: 1px;
+    color: #f3f5f7;
+    font-style: italic;
+}
+
+
+.cardcontainer1 h3{
+    font-size: x-large;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #f3f5f7;
+    
+}
+
+
+
+
+/*opsætning af footer - her anvendes der flexbox*/
+
+/* #footer er den overordnede section som indeholder flexboxen*/
+
+
+
+
+#følg {
+    background-color: #f3f5f7;
+    text-align: center;
+    color:#29293c;
+    font-family:serif;
+    font-size: 50px;
+    height: 100px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+
+.cardcontainer2 {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color:#f3f5f7;
+    height: 300px;
+    padding-left: 320px;
+    
+}
+
+
+footer {
+    background-color: #29293c;
+    height: 200px;
+}
+
+footer nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    
+}
+
+
+footer nav a{
+    color: #f3f5f7;
+}
+
+
+/*Her starter css på siden "tipstricks"*/
+/*Header og footer er på den øverste css - jeg har valgt at bruge samme header og footer på alle sider og
+derfor bruger jeg samme css til dem på alle sider*/
+
+
+/*Her er mine flexbox 
+der er tre flexbox på denne side
+den øverste har sin egen css, da den skal have padding i toppen
+de to andre deler, da de skal have 100% samme design*/
+
+
+/*Første flexbox*/
+.cardcontainer3 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#f3f5f7;
+    height: 400px;
+    padding-top: 100px;
+    
+}
+
+
+.cardcontainer3 div {
+    width:300px;
+    text-align: center;
+}
+
+
+
+.cardcontainer3 h5 { 
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-top: 5px;
+    text-align: left;
+    font-size: larger;
+    font-style: italic;
+   
+}
+
+
+.cardcontainer3 p {
+    text-align: left;
+    letter-spacing: 1px;
+    color:#29293c;
+    font-style: italic;
+}
+
+.cardcontainer3 a {
+    text-align: left;
+    letter-spacing: 1px;
+    color:#29293c;
+    font-style: italic;
+    padding-right: 200px;
+}
+
+
+
+.cardcontainer3 h4{
+    font-size: x-large;
+    text-align: left;
+    letter-spacing: 1px;
+    color:#29293c;
+    
+}
+
+#overskriftbox{
+    padding-right: 100px;
+}
+
+    
+    
+/*Anden og trejde flexbox*/
+
+.cardcontainer4 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#f3f5f7;
+    
+    height: 400px;
+    
+    
+}
+
+
+.cardcontainer4 div {
+    width:300px;
+    text-align: center;
+}
+
+
+
+.cardcontainer4 h5 { 
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-top: 5px;
+    text-align: left;
+    font-size: larger;
+    font-style: italic;
+   
+}
+
+
+.cardcontainer4 p {
+    text-align: left;
+    letter-spacing: 1px;
+    color:#29293c;
+    font-style: italic;
+}
+
+
+.cardcontainer4 h4{
+    font-size: x-large;
+    text-align: left;
+    letter-spacing: 1px;
+    color:#29293c;
+    
+}
+
+
+.cardcontainer4 a {
+    text-align: left;
+    letter-spacing: 1px;
+    color:#29293c;
+    font-style: italic;
+    padding-right: 200px;
+}
+
+/*Her starter css til "artikle1#*/
+
+
+
+
+
+#overskrift1 {
+    background-color: #f3f5f7;
+    text-align: center;
+    color:#29293c;
+    font-family:serif;
+    padding-top: 300px;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+   
+   
+    
+}
+
+
+#overskrift1 h7{
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
+
+#overskrift1 h8{
+    font-style: italic;
+    font-size: 50px;
+    
+    
+}
+
+#overskrift1 p{
+    padding-bottom: 20px;
+    line-height: 40px;
+    font-size: larger;
+}
+
+
+/*Flexbox - fordeling af artiklen*/
+
+.cardcontainer5 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#f3f5f7;
+    height: 800px;
+    padding-right: 100px;
+    padding-top: 100px;
+
+    
+    
+}
+
+
+.cardcontainer5 div {
+    width:400px;
+    text-align: center;
+    
+}
+
+
+
+
+.cardcontainer5 p {
+    text-align: left;
+    font-size: large;
+    letter-spacing: 2px;
+    color:#29293c;
+    padding-left: 150px;
+    width: 400px;
+    
+    
+}
+
+
+.cardcontainer5 a{
+    text-align: left;
+    font-size: large;
+    letter-spacing: 2px;
+    color:#29293c;
+    padding-left: 150px;
+    
+   
+
+}
+
+#billedbox{
+    padding-right: 100px;
+    
+}
+
+
+
+
+/*Her stater css til artikle 2*/
+
+#dejbilled {
+    background-color: #f3f5f7;
+    text-align: center;
+}
+
+
+.cardcontainer6 {
+    display: flex;
+    justify-content: space-around;
+    background-color:#f3f5f7;
+    padding-bottom: 70px;
+    height: 400px;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+
+.cardcontainer6 div {
+    width: 300px;
+    text-align: center;
+}
+
+
+
+
+.cardcontainer6 p {
+    text-align: left;
+    letter-spacing: 2px;
+    color:#29293c;
+    line-height: 25px;
+    
+}
+
+
+/*Her starter artilke 3*/
+
+
+
+.cardcontainer7 {
+    display: flex;
+    justify-content: space-around;
+    background-color:#f3f5f7;
+    
+    padding-right: 450px;
+    padding-left: 200px;
+    padding-top: 50px;
+}
+
+
+
+.cardcontainer7 div {
+    width: 200px;
+    text-align: center;
+}
+
+
